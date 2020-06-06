@@ -9,7 +9,7 @@ let package = Package(
         .iOS(.v13), .macOS(.v10_15), .watchOS(.v6), .tvOS(.v13)
     ],
     products: [
-        .library(name: "Grid", targets: ["Grid"])
+        .library(name: "Grid", type: .dynamic, targets: ["Grid"])
     ],
     targets: [
         .target(name: "Grid", dependencies: [], exclude: ["Demo"]),
